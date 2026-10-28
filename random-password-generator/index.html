@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password generator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
   <body
@@ -40,120 +41,100 @@
         >
       </header>
 
-      <div class="flex flex-1 items-center justify-center py-10"></div>
-    </div>
-    <div class="w-[273px] h-[34px] text-[28px] text-[#F0FDF4]">
-      Password generator
-    </div>
-    <div class="w-[235px] h-[17px] text-[14px] text-[#A4B9AD]">
-      A strong password. One click away.
-    </div>
-    <div class="w-[85px] h-[15px] text-[12px] text-[#A4B9AD]">
-      Your password
-    </div>
-    <div
-      class="w-[448px] h-[64px] rounded-[12px] border-[1px] border-[#FFFFFF1A] justify-between flex pr-[12px] pl-[16px] bg-[#101B16] items-center"
-    >
-      <div class="w-[173px] h-[24px] text-[18px] text-[#BBF7D0]">
-        K9#mQ2&xR7!vN4@p
-      </div>
-      <div
-        class="w-[55px] h-[31px] rounded-[8px] pt-[8px] pr-[12px] pb-[8px] pl-[12px] flex justify-center items-center bg-[#FFFFFF0D]"
-      >
-        <p class="text-[12px] text-[#DCECE2]">Copy</p>
-      </div>
-    </div>
-    <div class="w-[207px] h-[15px] text-[12px] text-[#A4B9AD]">
-      Uses letters, numbers, and symbols.
-    </div>
-    <div class="w-[448px] h-[28px] flex justify-between">
-      <div class="w-[111px] h-[17px] text-[14px] text-[#DCECE2]">
-        Password length
-      </div>
-      <div class="w-[22px] h-[24px] text-[18px] text-[#86EFAC]">16</div>
-    </div>
-    <div class="w-[448px] h-[6px] rounded-[3px] relative top-[7px]">
-      <div></div>
-      <div></div>
-    </div>
-    <div>
-      <div>8</div>
-      <div>24</div>
-    </div>
-    <div>
-      <p>Generate password</p>
-    </div>
-    <div>Generated in your browser. Never saved.</div>
-  </body>
-</html>
-<div
-      class="w-[1140px] h-[960px] flex items-center justify-center flex-col bg-[#190B10]"
-    >
-      <div class="w-[230px] h-[12px] text-[10px] text-[#C4A2AB] tracking-[3px]">
-        — LET’S GET YOU STARTED —
-      </div>
-      <div
-        class="w-[720px] h-[456px] border-[1px] border-[#46232E] rounded-[24px] flex flex-col justify-center bg-[#260F17] mt-[24px]"
-      >
+      <div class="flex flex-1 items-center justify-center py-10">
         <div
-          class="w-[720px] h-[398px] pt-[40px] pr-[48px] pb-[36px] pl-[48px]"
+          class="w-[520px] h-[571px] rounded-[24px] border-[1px] border-[#FFFFFF1A] bg-[#192B22] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] p-[36px]"
         >
-          <div class="w-[624px] h-[28px] flex justify-between">
-            <p class="text-[#FF9299] text-[10px] tracking-[1.5px]">
-              GETTING READY
-            </p>
-            <p class="text-[#C4A2AB] text-[11px]">01 — 03</p>
+          <div
+            class="w-[44px] h-[44px] rounded-[12px] bg-[#4ADE8026] flex justify-center items-center"
+          >
+            <div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="5"
+                  y="10"
+                  width="14"
+                  height="11"
+                  rx="2"
+                  stroke="#75E6A0"
+                  stroke-width="2"
+                />
+                <path
+                  d="M8 10V7a4 4 0 0 1 8 0v3"
+                  stroke="#75E6A0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <circle cx="12" cy="15" r="1" fill="#75E6A0" />
+                <path
+                  d="M12 16v2"
+                  stroke="#75E6A0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
           </div>
-          <div w-[483px] h-[48px] mt-[28px]>
-            <p class="text-[#FFF5EE] text-[40px] tracking-[-1.8px]">
-              Something good is coming.
-            </p>
+          <div class="w-[273px] h-[34px] text-[28px] text-[#F0FDF4] mt-[24px]">
+            Password generator
           </div>
-          <div class="w-[287px] h-[18px] mt-[12px]">
-            <p class="text-[#C4A2AB] text-[15px]">
-              A little preparation for a great beginning.
-            </p>
+          <div class="w-[235px] h-[17px] text-[14px] text-[#A4B9AD] mt-[8px]">
+            A strong password. One click away.
+          </div>
+          <div class="w-[85px] h-[15px] text-[12px] text-[#A4B9AD] mt-[32px]">
+            Your password
           </div>
           <div
-            class="w-[624px] h-[112px] flex justify-between items-center mt-[36px]"
+            class="w-[448px] h-[64px] rounded-[12px] border-[1px] border-[#FFFFFF1A] justify-between flex pr-[12px] pl-[16px] bg-[#101B16] items-center mt-[12px]"
           >
-            <div class="flex gap-[8px] items-baseline">
-              <div
-                id="counter"
-                class="min-w-[138px] h-[136px] text-[#FFF5EE] flex items-center text-[112px]"
-              >
-                64
-              </div>
-              <div class="w-[31px] h-[46px] text-[#FF6470] text-[38px]">%</div>
+            <div class="w-[173px] h-[24px] text-[18px] text-[#BBF7D0]">
+              K9#mQ2&xR7!vN4@p
             </div>
             <div
-              id="message"
-              class="w-[190px] h-[17px] text-[14px] text-[#C4A2AB]"
+              class="w-[55px] h-[31px] rounded-[8px] pt-[8px] pr-[12px] pb-[8px] pl-[12px] flex justify-center items-center bg-[#FFFFFF0D]"
             >
-              Bringing everything together
+              <p class="text-[12px] text-[#DCECE2]">Copy</p>
             </div>
           </div>
-          <div class="w-[624px] h-[12px] rounded-[6px] bg-[#46232E] mt-[24px]">
-            <div
-              id="loadingbar"
-              class="w-0 h-[12px] rounded-[6px] bg-[#EF3340]"
-            ></div>
+          <div class="w-[207px] h-[15px] text-[12px] text-[#A4B9AD] mt-[12px]">
+            Uses letters, numbers, and symbols.
           </div>
-          <div class="w-[624px] h-[16px] flex justify-between mt-[14px]">
-            <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
-              PREPARING YOUR EXPERIENCE
+          <div class="w-[448px] h-[28px] flex justify-between">
+            <div class="w-[111px] h-[17px] text-[14px] text-[#DCECE2] mt-[24px]">
+              Password length
             </div>
-            <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
-              JUST A MOMENT
-            </div>
+            <div class="w-[22px] h-[24px] text-[18px] text-[#86EFAC] mt-[23px]">16</div>
           </div>
-        </div>
-        <div
-          class="h-[56px] flex justify-center items-center bg-[#1E0C13] rounded-bl-[24px] rounded-br-[24px]"
-        >
-          <p class="w-[265px] h-[15px] text-[12px] text-[#C4A2AB]">
-            → Your welcome page will open automatically.
-          </p>
+
+          <input
+            type="range"
+            min="8"
+            max="24"
+            value="16"
+            class="mt-4 w-full cursor-pointer accent-[#4ade80] mt-[24px]"
+          />
+          <div class="w-[448px] h-[16px] justify-between flex mt-[4px]">
+            <div class="w-[8px] h-[15px] text-[12px] text-[#8AA294]">8</div>
+            <div class="w-[15px] h-[15px] text-[12px] text-[#8AA294]">24</div>
+          </div>
+          <div
+            class="w-[448px] h-[48px] rounded-[12px] bg-[#4ADE80] flex justify-center items-center mt-[28px]"
+          >
+            <p class="w-[133px] h-[17px] text-[14px] text-[#102418]">
+              Generate password
+            </p>
+          </div>
+          <div class="w-[448px] h-[16px] flex justify-center mt-[20px]">
+            <p class="text-[12px] text-[#8AA294]">Generated in your browser. Never saved.</p>
+          </div>
         </div>
       </div>
     </div>
+  </body>
+</html>
