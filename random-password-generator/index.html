@@ -7,7 +7,153 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body>
-    Random password generator
+  <body
+    class="min-h-screen min-w-[1000px] bg-[#101b16] font-sans text-[#f0fdf4]"
+  >
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header
+        class="flex h-24 shrink-0 items-center justify-between border-b border-[#86efac]/10"
+      >
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#86efac]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#86efac] transition-colors hover:border-[#86efac]/35 hover:bg-[#86efac]/10 hover:text-[#f0fdf4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#86efac] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span
+          class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#86efac]/65"
+          >The everyday collection / 02</span
+        >
+      </header>
+
+      <div class="flex flex-1 items-center justify-center py-10"></div>
+    </div>
+    <div class="w-[273px] h-[34px] text-[28px] text-[#F0FDF4]">
+      Password generator
+    </div>
+    <div class="w-[235px] h-[17px] text-[14px] text-[#A4B9AD]">
+      A strong password. One click away.
+    </div>
+    <div class="w-[85px] h-[15px] text-[12px] text-[#A4B9AD]">
+      Your password
+    </div>
+    <div
+      class="w-[448px] h-[64px] rounded-[12px] border-[1px] border-[#FFFFFF1A] justify-between flex pr-[12px] pl-[16px] bg-[#101B16] items-center"
+    >
+      <div class="w-[173px] h-[24px] text-[18px] text-[#BBF7D0]">
+        K9#mQ2&xR7!vN4@p
+      </div>
+      <div
+        class="w-[55px] h-[31px] rounded-[8px] pt-[8px] pr-[12px] pb-[8px] pl-[12px] flex justify-center items-center bg-[#FFFFFF0D]"
+      >
+        <p class="text-[12px] text-[#DCECE2]">Copy</p>
+      </div>
+    </div>
+    <div class="w-[207px] h-[15px] text-[12px] text-[#A4B9AD]">
+      Uses letters, numbers, and symbols.
+    </div>
+    <div class="w-[448px] h-[28px] flex justify-between">
+      <div class="w-[111px] h-[17px] text-[14px] text-[#DCECE2]">
+        Password length
+      </div>
+      <div class="w-[22px] h-[24px] text-[18px] text-[#86EFAC]">16</div>
+    </div>
+    <div class="w-[448px] h-[6px] rounded-[3px] relative top-[7px]">
+      <div></div>
+      <div></div>
+    </div>
+    <div>
+      <div>8</div>
+      <div>24</div>
+    </div>
+    <div>
+      <p>Generate password</p>
+    </div>
+    <div>Generated in your browser. Never saved.</div>
   </body>
 </html>
+<div
+      class="w-[1140px] h-[960px] flex items-center justify-center flex-col bg-[#190B10]"
+    >
+      <div class="w-[230px] h-[12px] text-[10px] text-[#C4A2AB] tracking-[3px]">
+        — LET’S GET YOU STARTED —
+      </div>
+      <div
+        class="w-[720px] h-[456px] border-[1px] border-[#46232E] rounded-[24px] flex flex-col justify-center bg-[#260F17] mt-[24px]"
+      >
+        <div
+          class="w-[720px] h-[398px] pt-[40px] pr-[48px] pb-[36px] pl-[48px]"
+        >
+          <div class="w-[624px] h-[28px] flex justify-between">
+            <p class="text-[#FF9299] text-[10px] tracking-[1.5px]">
+              GETTING READY
+            </p>
+            <p class="text-[#C4A2AB] text-[11px]">01 — 03</p>
+          </div>
+          <div w-[483px] h-[48px] mt-[28px]>
+            <p class="text-[#FFF5EE] text-[40px] tracking-[-1.8px]">
+              Something good is coming.
+            </p>
+          </div>
+          <div class="w-[287px] h-[18px] mt-[12px]">
+            <p class="text-[#C4A2AB] text-[15px]">
+              A little preparation for a great beginning.
+            </p>
+          </div>
+          <div
+            class="w-[624px] h-[112px] flex justify-between items-center mt-[36px]"
+          >
+            <div class="flex gap-[8px] items-baseline">
+              <div
+                id="counter"
+                class="min-w-[138px] h-[136px] text-[#FFF5EE] flex items-center text-[112px]"
+              >
+                64
+              </div>
+              <div class="w-[31px] h-[46px] text-[#FF6470] text-[38px]">%</div>
+            </div>
+            <div
+              id="message"
+              class="w-[190px] h-[17px] text-[14px] text-[#C4A2AB]"
+            >
+              Bringing everything together
+            </div>
+          </div>
+          <div class="w-[624px] h-[12px] rounded-[6px] bg-[#46232E] mt-[24px]">
+            <div
+              id="loadingbar"
+              class="w-0 h-[12px] rounded-[6px] bg-[#EF3340]"
+            ></div>
+          </div>
+          <div class="w-[624px] h-[16px] flex justify-between mt-[14px]">
+            <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
+              PREPARING YOUR EXPERIENCE
+            </div>
+            <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
+              JUST A MOMENT
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-[56px] flex justify-center items-center bg-[#1E0C13] rounded-bl-[24px] rounded-br-[24px]"
+        >
+          <p class="w-[265px] h-[15px] text-[12px] text-[#C4A2AB]">
+            → Your welcome page will open automatically.
+          </p>
+        </div>
+      </div>
+    </div>

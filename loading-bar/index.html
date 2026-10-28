@@ -8,75 +8,116 @@
     <script src="index.js" defer></script>
   </head>
 
-  <body class="flex items-center justify-center flex-col bg-[#190B10]">
-    <div
-      class="w-[1140px] h-[960px] flex items-center justify-center flex-col bg-[#190B10]"
-    >
-      <div class="w-[230px] h-[12px] text-[10px] text-[#C4A2AB] tracking-[3px]">
-        — LET’S GET YOU STARTED —
-      </div>
-      <div
-        class="w-[720px] h-[456px] border-[1px] border-[#46232E] rounded-[24px] flex flex-col justify-center bg-[#260F17] mt-[24px]"
+  <body
+    class="min-h-screen min-w-[1000px] bg-[#190b10] font-sans text-[#fff5ee]"
+  >
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header
+        class="flex h-24 shrink-0 items-center justify-between border-b border-[#ff9299]/10"
       >
-        <div
-          class="w-[720px] h-[398px] pt-[40px] pr-[48px] pb-[36px] pl-[48px]"
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#ff9299]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#ff9299] transition-colors hover:border-[#ff9299]/35 hover:bg-[#ff9299]/10 hover:text-[#fff5ee] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff9299] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span
+          class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#ff9299]/65"
+          >The everyday collection / 01</span
         >
-          <div class="w-[624px] h-[28px] flex justify-between">
-            <p class="text-[#FF9299] text-[10px] tracking-[1.5px]">
-              GETTING READY
-            </p>
-            <p class="text-[#C4A2AB] text-[11px]">01 — 03</p>
-          </div>
-          <div w-[483px] h-[48px] mt-[28px]>
-            <p class="text-[#FFF5EE] text-[40px] tracking-[-1.8px]">
-              Something good is coming.
-            </p>
-          </div>
-          <div class="w-[287px] h-[18px] mt-[12px]">
-            <p class="text-[#C4A2AB] text-[15px]">
-              A little preparation for a great beginning.
-            </p>
+      </header>
+
+      <div class="flex flex-1 items-center justify-center py-10">
+        <div
+          class="w-[1140px] h-[960px] flex items-center justify-center flex-col bg-[#190B10]"
+        >
+          <div
+            class="w-[230px] h-[12px] text-[10px] text-[#C4A2AB] tracking-[3px]"
+          >
+            — LET’S GET YOU STARTED —
           </div>
           <div
-            class="w-[624px] h-[112px] flex justify-between items-center mt-[36px]"
+            class="w-[720px] h-[456px] border-[1px] border-[#46232E] rounded-[24px] flex flex-col justify-center bg-[#260F17] mt-[24px]"
           >
-            <div class="flex gap-[8px] items-baseline">
-              <div
-                id="counter"
-                class="min-w-[138px] h-[136px] text-[#FFF5EE] flex items-center text-[112px]"
-              >
-                64
-              </div>
-              <div class="w-[31px] h-[46px] text-[#FF6470] text-[38px]">%</div>
-            </div>
             <div
-              id="message"
-              class="w-[190px] h-[17px] text-[14px] text-[#C4A2AB]"
+              class="w-[720px] h-[398px] pt-[40px] pr-[48px] pb-[36px] pl-[48px]"
             >
-              Bringing everything together
+              <div class="w-[624px] h-[28px] flex justify-between">
+                <p class="text-[#FF9299] text-[10px] tracking-[1.5px]">
+                  GETTING READY
+                </p>
+                <p class="text-[#C4A2AB] text-[11px]">01 — 03</p>
+              </div>
+              <div w-[483px] h-[48px] mt-[28px]>
+                <p class="text-[#FFF5EE] text-[40px] tracking-[-1.8px]">
+                  Something good is coming.
+                </p>
+              </div>
+              <div class="w-[287px] h-[18px] mt-[12px]">
+                <p class="text-[#C4A2AB] text-[15px]">
+                  A little preparation for a great beginning.
+                </p>
+              </div>
+              <div
+                class="w-[624px] h-[112px] flex justify-between items-center mt-[36px]"
+              >
+                <div class="flex gap-[8px] items-baseline">
+                  <div
+                    id="counter"
+                    class="min-w-[138px] h-[136px] text-[#FFF5EE] flex items-center text-[112px]"
+                  >
+                    64
+                  </div>
+                  <div class="w-[31px] h-[46px] text-[#FF6470] text-[38px]">
+                    %
+                  </div>
+                </div>
+                <div
+                  id="message"
+                  class="w-[190px] h-[17px] text-[14px] text-[#C4A2AB]"
+                >
+                  Bringing everything together
+                </div>
+              </div>
+              <div
+                class="w-[624px] h-[12px] rounded-[6px] bg-[#46232E] mt-[24px]"
+              >
+                <div
+                  id="loadingbar"
+                  class="w-0 h-[12px] rounded-[6px] bg-[#EF3340]"
+                ></div>
+              </div>
+              <div class="w-[624px] h-[16px] flex justify-between mt-[14px]">
+                <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
+                  PREPARING YOUR EXPERIENCE
+                </div>
+                <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
+                  JUST A MOMENT
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="w-[624px] h-[12px] rounded-[6px] bg-[#46232E] mt-[24px]">
             <div
-              id="loadingbar"
-              class="w-0 h-[12px] rounded-[6px] bg-[#EF3340]"
-            ></div>
-          </div>
-          <div class="w-[624px] h-[16px] flex justify-between mt-[14px]">
-            <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
-              PREPARING YOUR EXPERIENCE
-            </div>
-            <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
-              JUST A MOMENT
+              class="h-[56px] flex justify-center items-center bg-[#1E0C13] rounded-bl-[24px] rounded-br-[24px]"
+            >
+              <p class="w-[265px] h-[15px] text-[12px] text-[#C4A2AB]">
+                → Your welcome page will open automatically.
+              </p>
             </div>
           </div>
-        </div>
-        <div
-          class="h-[56px] flex justify-center items-center bg-[#1E0C13] rounded-bl-[24px] rounded-br-[24px]"
-        >
-          <p class="w-[265px] h-[15px] text-[12px] text-[#C4A2AB]">
-            → Your welcome page will open automatically.
-          </p>
         </div>
       </div>
     </div>
