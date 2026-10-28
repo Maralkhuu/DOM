@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loading · Forma</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
   <body class="flex items-center justify-center flex-col bg-[#190B10]">
@@ -39,20 +40,27 @@
           <div
             class="w-[624px] h-[112px] flex justify-between items-center mt-[36px]"
           >
-            <div class="flex gap-[8px] items-baseline ">
-              <div class="w-[138px] h-[136px] text-[#FFF5EE] flex items-center text-[112px]">
+            <div class="flex gap-[8px] items-baseline">
+              <div
+                id="counter"
+                class="min-w-[138px] h-[136px] text-[#FFF5EE] flex items-center text-[112px]"
+              >
                 64
               </div>
               <div class="w-[31px] h-[46px] text-[#FF6470] text-[38px]">%</div>
             </div>
-            <div class="w-[190px] h-[17px]">
-              <p class="text-[14px] text-[#C4A2AB]">
-                Bringing everything together
-              </p>
+            <div
+              id="message"
+              class="w-[190px] h-[17px] text-[14px] text-[#C4A2AB]"
+            >
+              Bringing everything together
             </div>
           </div>
           <div class="w-[624px] h-[12px] rounded-[6px] bg-[#46232E] mt-[24px]">
-            <div class="w-[399.36px] h-[12px] rounded-[6px] bg-[#EF3340]"></div>
+            <div
+              id="loadingbar"
+              class="w-0 h-[12px] rounded-[6px] bg-[#EF3340]"
+            ></div>
           </div>
           <div class="w-[624px] h-[16px] flex justify-between mt-[14px]">
             <div class="h-[12px] text-[10px] text-[#C4A2AB] tracking-[1px]">
