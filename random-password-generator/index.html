@@ -91,25 +91,41 @@
             Your password
           </div>
           <div
-            class="w-[448px] h-[64px] rounded-[12px] border-[1px] border-[#FFFFFF1A] justify-between flex pr-[12px] pl-[16px] bg-[#101B16] items-center mt-[12px]"
+            class="h-[64px] rounded-[12px] border border-[#FFFFFF1A] justify-between flex pr-[12px] pl-[16px] bg-[#101B16] items-center mt-[12px]"
           >
-            <div class="w-[173px] h-[24px] text-[18px] text-[#BBF7D0]">
-              K9#mQ2&xR7!vN4@p
-            </div>
-            <div
-              class="w-[55px] h-[31px] rounded-[8px] pt-[8px] pr-[12px] pb-[8px] pl-[12px] flex justify-center items-center bg-[#FFFFFF0D]"
+            <input
+              readonly
+              type="text"
+              id="password-generator"
+              class="flex-1 text-[18px] text-[#BBF7D0]"
+            />
+
+            <button
+              id="copy-button"
+              type="button"
+              class="text-[12px] text-[#DCECE2] cursor-pointer w-[55px] h-[31px] rounded-[8px] bg-[#FFFFFF0D] hover:bg-white/10"
             >
-              <p class="text-[12px] text-[#DCECE2]">Copy</p>
-            </div>
+              Copy
+            </button>
           </div>
-          <div class="w-[207px] h-[15px] text-[12px] text-[#A4B9AD] mt-[12px]">
+          <div
+            id="copy-button-text"
+            class="w-[207px] h-[15px] text-[12px] text-[#A4B9AD] mt-[12px]"
+          >
             Uses letters, numbers, and symbols.
           </div>
           <div class="w-[448px] h-[28px] flex justify-between">
-            <div class="w-[111px] h-[17px] text-[14px] text-[#DCECE2] mt-[24px]">
+            <div
+              class="w-[111px] h-[17px] text-[14px] text-[#DCECE2] mt-[24px]"
+            >
               Password length
             </div>
-            <div class="w-[22px] h-[24px] text-[18px] text-[#86EFAC] mt-[23px]">16</div>
+            <div
+              id="password-length"
+              class="w-[22px] h-[24px] text-[18px] text-[#86EFAC] mt-[23px]"
+            >
+              16
+            </div>
           </div>
 
           <input
@@ -117,21 +133,26 @@
             min="8"
             max="24"
             value="16"
+            id="password-length-cursor"
             class="mt-4 w-full cursor-pointer accent-[#4ade80] mt-[24px]"
           />
           <div class="w-[448px] h-[16px] justify-between flex mt-[4px]">
             <div class="w-[8px] h-[15px] text-[12px] text-[#8AA294]">8</div>
             <div class="w-[15px] h-[15px] text-[12px] text-[#8AA294]">24</div>
           </div>
-          <div
-            class="w-[448px] h-[48px] rounded-[12px] bg-[#4ADE80] flex justify-center items-center mt-[28px]"
+
+          <button
+            id="generate-password"
+            type="button"
+            class="w-[448px] h-[48px] mt-[28px] rounded-[12px] bg-[#4ADE80] text-[14px] cursor-pointer hover:bg-[#86efac] text-[#102418]"
           >
-            <p class="w-[133px] h-[17px] text-[14px] text-[#102418]">
-              Generate password
-            </p>
-          </div>
+            Generate Password
+          </button>
+
           <div class="w-[448px] h-[16px] flex justify-center mt-[20px]">
-            <p class="text-[12px] text-[#8AA294]">Generated in your browser. Never saved.</p>
+            <p class="text-[12px] text-[#8AA294]">
+              Generated in your browser. Never saved.
+            </p>
           </div>
         </div>
       </div>
