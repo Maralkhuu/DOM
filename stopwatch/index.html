@@ -5,9 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stopwatch</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body>
-    Stopwatch
+  <body
+    class="min-h-screen min-w-[1000px] bg-[#101714] font-sans text-[#f0fdf4]"
+  >
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header
+        class="flex h-24 shrink-0 items-center justify-between border-b border-[#c5d9bd]/10"
+      >
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#c5d9bd]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#c5d9bd] transition-colors hover:border-[#c5d9bd]/35 hover:bg-[#c5d9bd]/10 hover:text-[#f0fdf4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c5d9bd] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span
+          class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#c5d9bd]/65"
+          >The everyday collection / 04</span
+        >
+      </header>
+
+      <div class="flex flex-1 items-center justify-center py-10">
+        <div class="w-[620px] h-[551px] rounded-[28px] border border-[#FFFFFF26] p-10">
+          <div class="w-[540px] h-[44px] flex justify-between">
+            <div class="w-[44px] h-[44px] rounded-[12px] bg-[#B5CBB21A] flex justify-center items-center">
+              <div class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="33"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  stroke="#C5D8C0"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="22" cy="24" r="13.5" />
+                  <path d="M22 17v7l5 3" />
+                  <path d="M18 3h8M22 3v7M32 12l3-3" />
+                </svg>
+              </div>
+            </div>
+            <div class="w-[62px] h-[29px] rounded-[99px] border border-[#C5D9BD26] text-[#C5D9BD] text-xs flex justify-center items-center" >Ready</div>
+          </div>
+          <div class="mt-[28px] width-[195px] h-[60px] text-[#F0FDF4] text-[40px]">Stopwatch</div>
+          <div class="mt-[8px] w-[186px] h-[17px] text-[14px] text-[#A4B9AD] ">Make time for what matters.</div>
+          <div class="w-[540px] h-[1px] mt-[36px] bg-[#B5CBB226] "></div>
+          <div class="w-[540px] h-[86px]">
+            <div class="w-[166.67px] h-[86px] flex flex-col gap-[16px]">
+              <div class="w-[66px] h-[56px] text-[56px] text-[#EDF3E8]">00</div>
+              <div>HOURS</div>
+            </div>
+            <div>:</div>
+            <div class="w-[166.67px] h-[86px] flex flex-col gap-[16px]">
+              <div class="w-[66px] h-[56px] text-[56px] text-[#EDF3E8]">00</div>
+              <div>MINUTES</div>
+            </div>
+            <div>:</div>
+            <div class="w-[166.67px] h-[86px] flex flex-col gap-[16px]">
+              <div class="w-[66px] h-[56px] text-[56px] text-[#EDF3E8]">00</div>
+              <div>SECONDS</div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
